@@ -69,9 +69,74 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+  </style> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+    </style>
+
+  <style>
+    .slider {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 150px;
+    color: white;
+    font-family: sans-serif;
+    text-align: right;
+}
+.slider input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+#stars {
+	position: fixed;
+	z-index: 1;
+}
+.home-hero-card {
+	position: relative;
+	z-index: 2;
+}
+.solution {
+	z-index: 2;
+	position: relative;
+}
+.card_vertical {
+	position: relative;
+	z-index: 2;
+}
+.card_horizontal {
+	position: relative;
+	z-index: 2;
+}
+.checklist {
+	position: relative;
+	z-index: 2;
+}
+.section-footer-2 {
+	background: #242b2b !important;
+	z-index: 2;
+}
+.po-zindex {
+  position: relative !important;
+	z-index: 2 !important;
+}
+.Audiowide {
+  font-family: 'Quantico', sans-serif !important;
+}
+  </style>
 </head>
 
-<body class="body">
+<body class="body Audiowide">
+  <!-- Canvas Area -->
+  <canvas id="stars"></canvas>
+  <div class="slider">
+      <input type="range" min="0.5" max="15" value="2" step="0.5" >
+      Speed: <span id="speed"></span>
+  </div>
+  <!-- Canvas End -->
   <div data-w-id="c2500371-3323-9146-f03d-2a9a376b4fde" style="height:0px;opacity:0;display:none"
     class="top-bar-wrapper---brix">
     <div class="top-bar-container---brix">
@@ -109,7 +174,7 @@
     <div class="container-regular">
       <div class="flex-wrapper-centre">
         <h1 data-w-id="f54ecdd6-1481-db01-2d65-ecbe03192d7d" style="opacity:0"
-          class="black-header text-color-white margin-bottom-24">Decentralized naming for wallets, websites, & more.
+          class="black-header text-color-white margin-bottom-24 Audiowide">Decentralized naming for wallets, websites, & more.
         </h1>
         <p data-w-id="f54ecdd6-1481-db01-2d65-ecbe03192d7f" style="opacity:0" class="paragraph-large">No more copying
           and pasting long addresses. <br />Use your .<strong>arb</strong> name to store your digital identity. </p>
@@ -154,14 +219,14 @@
   <div class="section white">
     <div class="container-regular">
       <div class="flex-wrapper-centre">
-        <h2 class="sub-head">Arbitrum Name Service (ANS)</h2>
+        <h2 class="sub-head po-zindex">Arbitrum Name Service (ANS)</h2>
       </div>
       <div class="w-layout-grid grid-solution">
         <div id="w-node-_01d2fd0e-ea26-0d7b-d57c-b3c34eb1472c-183da65c" data-w-id="01d2fd0e-ea26-0d7b-d57c-b3c34eb1472c"
           style="opacity:0" class="solution center">
-          <div class="icon-solution-block"><img
+          <div class="icon-solution-block po-zindex"><img
               src="62d61345b4ae5b6afa3da657/62d61345b4ae5b22763da668_Untitled design (4).png" loading="eager" alt=""
-              class="icon-solution" />
+              class="icon-solution po-zindex" />
             <div class="icon-solution-blur"></div>
           </div>
           <div class="solution-block center">
@@ -276,60 +341,60 @@
     <div class="container-regular"></div>
     <div class="container">
       <div class="title-wrap">
-        <h1 class="sub-head">Frequently <br />asked questions</h1>
+        <h1 class="sub-head po-zindex">Frequently <br />asked questions</h1>
       </div>
       <div class="w-layout-grid faq-grid">
-        <div id="w-node-_982a5565-c4c4-4a56-bc19-cf5d67163b08-183da65c" class="faq-wrapper">
-          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b09" class="faq-question-wrap"><a href="#"
+        <div id="w-node-_982a5565-c4c4-4a56-bc19-cf5d67163b08-183da65c" class="faq-wrapper po-zindex">
+          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b09" class="faq-question-wrap po-zindex"><a href="#"
               class="faq-question-bar w-inline-block">
               <div class="question-title">Is my .arb name only for storing a Arbitrum address?</div>
-              <div class="faq-circle"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
+              <div class="faq-circle po-zindex"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
                   class="plus-icon" /></div>
             </a>
             <div style="height:0PX" class="faq-content">
-              <p class="faq-paragraph">No, you can store the addresses of over 100 blockchains, a content hash of a
+              <p class="faq-paragraph po-zindex">No, you can store the addresses of over 100 blockchains, a content hash of a
                 decentralized website, profile information such as an avatar and Twitter handle, and more.<br /></p>
               <div class="div-block"></div>
             </div>
           </div>
-          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b13" class="faq-question-wrap"><a href="#"
+          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b13" class="faq-question-wrap po-zindex"><a href="#"
               class="faq-question-bar w-inline-block">
               <div class="question-title">Once I own a name, can I create my own subdomains?</div>
-              <div class="faq-circle"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
+              <div class="faq-circle po-zindex"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
                   class="plus-icon" /></div>
             </a>
-            <div style="height:0PX" class="faq-content">
+            <div style="height:0PX" class="faq-content po-zindex">
               <p class="faq-paragraph">Yes. You can create whatever subdomains you wish and assign ownership of them to
                 other people if you desire. e.g. your own Arbitrum.arb you can create subdomains like
                 jack.Arbitrum.arb, henry.Arbitrum.arb and so forth. </p>
             </div>
           </div>
-          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b1c" class="faq-question-wrap"><a href="#"
+          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b1c" class="faq-question-wrap po-zindex"><a href="#"
               class="faq-question-bar w-inline-block">
               <div class="question-title">Which wallets and dApps support ANS so far?</div>
               <div class="faq-circle"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
                   class="plus-icon" /></div>
             </a>
-            <div style="height:0PX" class="faq-content">
+            <div style="height:0PX" class="faq-content po-zindex">
               <p class="faq-paragraph">While Arbitrum is still in its early stages, we aim to integrate .arb domain
                 names with all native and trusted Arbitrum platforms, this includes wallets, block explorers, NFT
                 platforms, and dApps.</p>
             </div>
           </div>
-          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b25" class="faq-question-wrap"><a href="#"
+          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b25" class="faq-question-wrap po-zindex"><a href="#"
               class="faq-question-bar w-inline-block">
               <div class="question-title">What does it cost to register a .arb domain?</div>
               <div class="faq-circle"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
                   class="plus-icon" /></div>
             </a>
-            <div style="height:0PX" class="faq-content">
+            <div style="height:0PX" class="faq-content po-zindex">
               <p class="faq-paragraph">Currently, registration costs are set at the following prices:<br />‍<br />- 5+
                 character .arb names: $10 in arb per year.<br />- 4 character .arb names: $169 in arb per year.<br />- 3
                 character .arb names $1055 in arb per year.<br />‍<br />3 and 4 character names have higher pricing to
                 reflect the small number of these names available.</p>
             </div>
           </div>
-          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b2e" class="faq-question-wrap"><a href="#"
+          <div data-w-id="982a5565-c4c4-4a56-bc19-cf5d67163b2e" class="faq-question-wrap po-zindex"><a href="#"
               class="faq-question-bar w-inline-block">
               <div class="question-title">What happens if I forget to extend the registration of a name?</div>
               <div class="faq-circle"><img src="62d61345b4ae5b6afa3da657/62db5230f67a05de99bdfd2c_plus.svg" alt=""
@@ -496,6 +561,93 @@
     });
   </script>
   <script src="gh/videsigns/webflow-tools_main/webgl-gradient.js"> </script>
+    <!-- Canvas Aimation Js -->
+    <script>
+      // DOM selectors
+      const stars = document.getElementById("stars");
+      const starsCtx = stars.getContext("2d");
+      const slider = document.querySelector(".slider input");
+      const output = document.querySelector("#speed");
+  
+      // global variables
+      let screen,
+        starsElements,
+        starsParams = { speed: 2, number: 300, extinction: 4 };
+  
+      // run stars
+      setupStars();
+      updateStars();
+  
+      // handle slider
+      output.innerHTML = slider.value;
+      slider.oninput = function () {
+        output.innerHTML = this.value;
+        starsParams.speed = this.value;
+      };
+  
+      // update stars on resize to keep them centered
+      window.onresize = function () {
+        setupStars();
+      };
+  
+      // star constructor
+      function Star() {
+        this.x = Math.random() * stars.width;
+        this.y = Math.random() * stars.height;
+        this.z = Math.random() * stars.width;
+  
+        this.move = function () {
+          this.z -= starsParams.speed;
+          if (this.z <= 0) {
+            this.z = stars.width;
+          }
+        };
+  
+        this.show = function () {
+          let x, y, rad, opacity;
+          x = (this.x - screen.c[0]) * (stars.width / this.z);
+          x = x + screen.c[0];
+          y = (this.y - screen.c[1]) * (stars.width / this.z);
+          y = y + screen.c[1];
+          rad = stars.width / this.z;
+          opacity =
+            rad > starsParams.extinction ? 1.5 * (2 - rad / starsParams.extinction) : 1;
+  
+          starsCtx.beginPath();
+          starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
+          starsCtx.arc(x, y, rad, 0, Math.PI * 2);
+          starsCtx.fill();
+        };
+      }
+  
+      // setup <canvas>, create all the starts
+      function setupStars() {
+        screen = {
+          w: window.innerWidth,
+          h: window.innerHeight,
+          c: [window.innerWidth * 0.5, window.innerHeight * 0.5]
+        };
+        window.cancelAnimationFrame(updateStars);
+        stars.width = screen.w;
+        stars.height = screen.h;
+        starsElements = [];
+        for (let i = 0; i < starsParams.number; i++) {
+          starsElements[i] = new Star();
+        }
+      }
+  
+      // redraw the frame
+      function updateStars() {
+        starsCtx.fillStyle = "black";
+        starsCtx.fillRect(0, 0, stars.width, stars.height);
+        starsElements.forEach(function (s) {
+          s.show();
+          s.move();
+        });
+        window.requestAnimationFrame(updateStars);
+      }
+  
+    </script>
   
 </body>
 
