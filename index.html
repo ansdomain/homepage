@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- Last Published: Wed Sep 28 2022 03:47:23 GMT+0000 (Coordinated Universal Time) -->
+<!DOCTYPE html>
 <html data-wf-domain="pulse.domains" data-wf-page="62d61345b4ae5b36183da65c" data-wf-site="62d61345b4ae5b6afa3da657">
 
 <head>
@@ -21,6 +21,7 @@
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="62d61345b4ae5b6afa3da657/css/arbdomainsxy1.657a89100.min.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -116,7 +117,7 @@
 	z-index: 2;
 }
 .section-footer-2 {
-	background: #242b2b !important;
+	background: #3b3b3b !important;
 	z-index: 2;
 }
 .po-zindex {
@@ -126,6 +127,52 @@
 .Audiowide {
   font-family: 'Quantico', sans-serif !important;
 }
+
+.clickEffect{
+	position:fixed;
+	box-sizing:border-box;
+	border-style:solid;
+	border-color:#fff;
+	border-radius:50%;
+	animation:clickEffect 0.4s ease-out;
+	z-index:99999;
+}
+@keyframes clickEffect{
+	0%{
+		opacity:1;
+		width:0.5em; height:0.5em;
+		margin:-0.25em;
+		border-width:0.5rem;
+	}
+	100%{
+		opacity:0.2;
+		width:15em; height:15em;
+		margin:-7.5em;
+		border-width:0.03rem;
+	}
+}
+
+.navigation.w-nav {
+	position: sticky;
+	top: 60px;
+}
+
+
+.faq-title {
+    font-weight: 200;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.9em;
+    color: #000;
+    padding: 0;
+    line-height: 0.8em !important;
+    text-transform: none;
+}
+
+.faq-title span {
+    animation-delay: 2s;
+}
+
   </style>
 </head>
 
@@ -159,7 +206,7 @@
       <nav role="navigation" class="navigation-menu w-nav-menu"><a href="#community"
           class="navigation-link w-nav-link">Community</a><a href="#about"
           class="navigation-link w-nav-link">About</a><a href="#faq" class="navigation-link w-nav-link">FAQ</a><a
-          href="#faq" class="navigation-link w-nav-link">Claim for Mainnet</a><a href="#faq"
+          href="#" class="navigation-link w-nav-link">Claim on Mainnet</a><a href="#faq"
           class="navigation-button hide-desktop w-nav-link">Go To App</a></nav>
       <div class="navigation-wrapper">
         <div class="menu-button w-nav-button">
@@ -187,7 +234,7 @@
               <p class="font-colored">.arb</p>
             </div>
             <div class="example">
-              <p class="font1">richard</p>
+              <p class="font1">Steven</p>
               <p class="font-colored">.arb</p>
             </div>
             <div class="example hide">
@@ -195,14 +242,14 @@
               <p class="font-colored">.arb</p>
             </div>
             <div class="example hide">
-              <p class="font1">hex</p>
+              <p class="font1">elon</p>
               <p class="font-colored">.arb</p>
             </div>
           </div>
         </div>
         <div class="form w-form">
           <form id="wf-form-search" name="wf-form-search" data-name="search" method="get" class="eth-form">
-            <div class="div-block-2"><input type="text" class="search w-input" maxlength="256" name="name"
+            <div class="div-block-2"><input type="text" class="search input-search-name w-input" maxlength="256" name="name"
                 data-name="Name" placeholder="yourname" id="search" required="" /><label for="search"
                 class="label text-size-medium">.arb</label></div><input type="submit" value="Search" data-wait="Search"
               class="search-button eth-form-btn w-button" />
@@ -212,6 +259,21 @@
             </p>
           </div>
           <div class="error-message w-form-fail"></div>
+        </div>
+        <div class="from-name-price">
+          <div class="from-n-p-wrapper">
+            <div class="f-n-p-left-s">
+              <div class="f-n-p-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div><span>Talha</span>.arb</div>
+              <p>Available</p>
+            </div>
+            <div class="f-n-p-right-s">
+              <strong>5$</strong>
+              <a href="#">BUY</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -223,41 +285,41 @@
       </div>
       <div class="w-layout-grid grid-solution">
         <div id="w-node-_01d2fd0e-ea26-0d7b-d57c-b3c34eb1472c-183da65c" data-w-id="01d2fd0e-ea26-0d7b-d57c-b3c34eb1472c"
-          style="opacity:0" class="solution center">
-          <div class="icon-solution-block po-zindex"><img
+          style="opacity:0" class="solution center glass-eff">
+          <div class="icon-solution-block"><img
               src="62d61345b4ae5b6afa3da657/62d61345b4ae5b22763da668_Untitled design (4).png" loading="eager" alt=""
               class="icon-solution po-zindex" />
             <div class="icon-solution-blur"></div>
           </div>
           <div class="solution-block center">
-            <h5 class="heading-5">Unique Name</h5>
-            <p class="paragraph-solution">The globally unique <strong>.arb</strong> domain name replaces the
+            <h5 class="heading-5 text-white">Unique Name</h5>
+            <p class="paragraph-solution text-white">The globally unique <strong>.arb</strong> domain name replaces the
               meaningless, unreadable, and unmemorable long addresses. </p>
           </div>
         </div>
         <div id="w-node-_01d2fd0e-ea26-0d7b-d57c-b3c34eb14738-183da65c" data-w-id="01d2fd0e-ea26-0d7b-d57c-b3c34eb14738"
-          style="opacity:0" class="solution center">
+          style="opacity:0" class="solution center glass-eff">
           <div class="icon-solution-block"><img
               src="62d61345b4ae5b6afa3da657/62d61345b4ae5b34413da664_Untitled design (3).png" loading="eager" alt=""
               class="icon-solution" />
             <div class="icon-solution-blur"></div>
           </div>
           <div class="solution-block center">
-            <h5 class="heading-5"><strong class="heading-5">Aggregated Identity</strong></h5>
-            <p class="paragraph-solution">ANS binds different addresses in a multi-chain ecosystem. It brings together
+            <h5 class="heading-5"><strong class="heading-5 text-white">Aggregated Identity</strong></h5>
+            <p class="paragraph-solution text-white">ANS binds different addresses in a multi-chain ecosystem. It brings together
               fragmented identities into one.</p>
           </div>
         </div>
         <div id="w-node-_01d2fd0e-ea26-0d7b-d57c-b3c34eb14742-183da65c" data-w-id="01d2fd0e-ea26-0d7b-d57c-b3c34eb14742"
-          style="opacity:0" class="solution center">
+          style="opacity:0" class="solution center glass-eff">
           <div class="icon-solution-block"><img
               src="62d61345b4ae5b6afa3da657/62d61345b4ae5be9953da663_Untitled design (6).png" loading="eager" alt=""
               class="icon-solution" />
             <div class="icon-solution-blur"></div>
           </div>
           <div class="solution-block center">
-            <h5 class="heading-5">On-Chain Security</h5>
-            <p class="paragraph-solution">ANS is built on smart contracts on the Arbitrum blockchain, meaning it
+            <h5 class="heading-5 text-white">On-Chain Security</h5>
+            <p class="paragraph-solution text-white">ANS is built on smart contracts on the Arbitrum blockchain, meaning it
               doesn&#x27;t suffer from the insecurity of the DNS system. </p>
           </div>
         </div>
@@ -270,12 +332,12 @@
     </div>
     <div class="container-regular">
       <div class="w-layout-grid grid">
-        <div id="w-node-_26ecd5e2-1880-c30d-dc4d-6119edc7be76-183da65c" class="card_vertical">
+        <div id="w-node-_26ecd5e2-1880-c30d-dc4d-6119edc7be76-183da65c" class="card_vertical glass-eff-card-v">
           <div id="w-node-_26ecd5e2-1880-c30d-dc4d-6119edc7be77-183da65c" class="margin-bottom margin-small">
             <div class="card_content-wrapper">
               <div class="margin-bottom margin-xsmall">
                 <h2 class="section-heading">web3 username<br /></h2>
-                <p class="paragraph-solution center">No more sandboxed usernames. Own your username, store an avatar and
+                <p class="paragraph-solution center text-white">No more sandboxed usernames. Own your username, store an avatar and
                   other profile data, and use it across services.<br /></p>
               </div>
             </div>
@@ -285,13 +347,13 @@
             sizes="(max-width: 479px) 63vw, (max-width: 767px) 59vw, (max-width: 991px) 62vw, (max-width: 1279px) 64vw, 811.1953125px"
             alt="" class="img-chat" />
         </div>
-        <div class="card_vertical">
+        <div class="card_vertical glass-eff-card-v">
           <div id="w-node-_51ea9427-9ce9-bfd0-c1cc-d0ec5a4ebfd3-183da65c" class="margin-bottom margin-small">
             <div id="w-node-_51ea9427-9ce9-bfd0-c1cc-d0ec5a4ebfd4-183da65c" class="card_content-wrapper">
               <div class="card_content-wrapper">
                 <div class="margin-bottom margin-xsmall">
                   <h2 class="section-heading">simple address<br /></h2>
-                  <p class="paragraph-solution center">Use a human-readable and memorable name to replace your
+                  <p class="paragraph-solution center text-white">Use a human-readable and memorable name to replace your
                     addresses. Using your.arb domain name rather than the address in other dApps.<br /></p>
                 </div>
               </div>
@@ -302,7 +364,7 @@
             sizes="(max-width: 479px) 52vw, (max-width: 767px) 59vw, (max-width: 991px) 62vw, (max-width: 1279px) 64vw, 811.1953125px"
             alt="" class="img-chat" />
         </div>
-        <div id="w-node-_27f324ca-4eb1-444b-21ea-96d8c2c456c2-183da65c" class="card_horizontal">
+        <div id="w-node-_27f324ca-4eb1-444b-21ea-96d8c2c456c2-183da65c" class="card_horizontal glass-eff-card-s">
           <div class="_50">
             <div id="w-node-_27f324ca-4eb1-444b-21ea-96d8c2c456c4-183da65c" class="card_content-wrapper">
               <div class="margin-bottom">
@@ -310,7 +372,7 @@
               </div>
               <div class="margin-bottom margin-xsmall">
                 <h2 class="section-heading">on-chain profile<br /></h2>
-                <p class="paragraph-solution center">Create your unique profile and display on-chain and off-chain data
+                <p class="paragraph-solution center text-white">Create your unique profile and display on-chain and off-chain data
                   such as website and social links as well as cross-chain addresses to receive payments.<br /></p>
               </div>
             </div>
@@ -331,7 +393,7 @@
         <h1 class="sub-head">About</h1>
       </div>
       <div data-w-id="063a7c57-4213-6469-2c22-c2c743c16d2f" style="opacity:0" class="solution center backgroundimg">
-        <h5 class="heading-7 center">We are an ENS Fork on Arbitrum. Arbitrum Domains, the Arbitrum Naming Service
+        <h5 class="heading-7 center text-white">We are an ENS Fork on Arbitrum. Arbitrum Domains, the Arbitrum Naming Service
           (ANS) is a public good meant to bring adoption and utility to the Arbitrum Ecosystem. Anyone and everyone is
           free to interact with the protocol as they are permissionless contracts on the Arbitrum blockchain.</h5>
       </div>
@@ -341,7 +403,7 @@
     <div class="container-regular"></div>
     <div class="container">
       <div class="title-wrap">
-        <h1 class="sub-head po-zindex">Frequently <br />asked questions</h1>
+        <h1 class="sub-head po-zindex"><span class="txt-rotate" data-period="2000" data-rotate='[ "Frequently <br> asked questions", "FAQ" ]'></span></h1>
       </div>
       <div class="w-layout-grid faq-grid">
         <div id="w-node-_982a5565-c4c4-4a56-bc19-cf5d67163b08-183da65c" class="faq-wrapper po-zindex">
@@ -421,7 +483,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a5abca4405f442253_check-square.svg"
             loading="lazy" alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">ENS Fork + Audit</h5>
+          <h5 class="heading-7 text-white">ENS Fork + Audit</h5>
         </div>
         <div></div>
       </div>
@@ -429,7 +491,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">Testnet Launch</h5>
+          <h5 class="heading-7 text-white">Testnet Launch</h5>
           <p class="faq-paragraph small">Open mint available on Arbitrum testnet, no restrictions on domain names.</p>
         </div>
         <div></div>
@@ -438,7 +500,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">Mainnet Launch</h5>
+          <h5 class="heading-7 text-white">Mainnet Launch</h5>
         </div>
         <div></div>
       </div>
@@ -446,7 +508,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">Domain Minting <br />Open to Public</h5>
+          <h5 class="heading-7 text-white">Domain Minting <br />Open to Public</h5>
         </div>
         <div></div>
       </div>
@@ -454,7 +516,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">Top Tier Domains <br />Claiming Auction </h5>
+          <h5 class="heading-7 text-white">Top Tier Domains <br />Claiming Auction </h5>
           <p class="faq-paragraph small">To mitigate cybersquatting, top tier domain names will be auctioned on a native
             NFT marketplace. </p>
         </div>
@@ -464,7 +526,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">.arb On-Chain Profiles</h5>
+          <h5 class="heading-7 text-white">.arb On-Chain Profiles</h5>
         </div>
         <div></div>
       </div>
@@ -472,7 +534,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7">IPFS Websites</h5>
+          <h5 class="heading-7 text-white">IPFS Websites</h5>
         </div>
         <div></div>
       </div>
@@ -480,7 +542,7 @@
         <div class="check-box"><img src="62d61345b4ae5b6afa3da657/62e0514a3d711a7a0f75beba_square.svg" loading="lazy"
             alt="" class="image" /></div>
         <div class="solution-block center">
-          <h5 class="heading-7"> Continues Arbitrum <br />Ecosystem Integrations</h5>
+          <h5 class="heading-7 text-white"> Continues Arbitrum <br />Ecosystem Integrations</h5>
           <p class="faq-paragraph small">While Arbitrum is still in its early stages, we aim to integrate ANS
             functionality across all major and trustworthy Arbitrum dApps, block explorer, NFT marketplaces & native
             wallets.</p>
@@ -497,30 +559,30 @@
       </div>
       <div class="w-layout-grid grid-solution two-side">
         <div id="w-node-_33d8c774-80f5-aabb-1f25-075c6d69905d-183da65c" data-w-id="33d8c774-80f5-aabb-1f25-075c6d69905d"
-          style="opacity:0" class="solution center">
-          <div class="icon-solution-block"><img src="62d61345b4ae5b6afa3da657/62e194fa2601cb3e9bcd8573_twitter.png"
+          style="opacity:0" class="solution center glass-eff">
+          <div class="icon-solution-block"><img src="62d61345b4ae5b6afa3da657/twitter.png"
               loading="eager"
-              srcset="62d61345b4ae5b6afa3da657/62e194fa2601cb3e9bcd8573_twitter-p-500.png 500w, 62d61345b4ae5b6afa3da657/62e194fa2601cb3e9bcd8573_twitter.png 512w"
+              srcset="62d61345b4ae5b6afa3da657/twitter.png 500w, 62d61345b4ae5b6afa3da657/twitter.png 512w"
               sizes="(max-width: 1279px) 70px, (max-width: 1439px) 5vw, 70px" alt="" class="icon-solution light" />
             <div class="icon-solution-blur side"></div>
           </div>
           <div class="solution-block center">
-            <h5 class="heading-5">Twitter</h5>
+            <h5 class="heading-5 text-white">Twitter</h5>
           </div><a href="https://twitter.com/ArbitrumDomain" target="_blank" class="button-white w-inline-block">
             <div>Follow</div>
           </a>
         </div>
         <div id="w-node-_33d8c774-80f5-aabb-1f25-075c6d699073-183da65c" data-w-id="33d8c774-80f5-aabb-1f25-075c6d699073"
-          style="opacity:0" class="solution center">
-          <div class="icon-solution-block"><img src="62d61345b4ae5b6afa3da657/62e194fa08bdf7fcb4a0b53a_telegram.png"
+          style="opacity:0" class="solution center glass-eff">
+          <div class="icon-solution-block"><img src="62d61345b4ae5b6afa3da657/discord.png"
               loading="eager"
-              srcset="62d61345b4ae5b6afa3da657/62e194fa08bdf7fcb4a0b53a_telegram-p-500.png 500w, 62d61345b4ae5b6afa3da657/62e194fa08bdf7fcb4a0b53a_telegram.png 512w"
+              srcset="62d61345b4ae5b6afa3da657/discord.png 500w, 62d61345b4ae5b6afa3da657/discord.png 512w"
               sizes="(max-width: 1279px) 70px, (max-width: 1439px) 5vw, 70px" alt="" class="icon-solution light" />
             <div class="icon-solution-blur side"></div>
           </div>
           <div class="solution-block center">
-            <h5 class="heading-5">Discord</h5>
-          </div><a href="https://discord.gg/W6QuYEh69X" target="_blank" class="button-white w-inline-block">
+            <h5 class="heading-5 text-white">Discord</h5>
+          </div><a href="https://discord.gg/CnhDFbahm6" target="_blank" class="button-white w-inline-block">
             <div>Join</div>
           </a>
         </div>
@@ -552,102 +614,10 @@
   </div>
   <script src="js/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript"></script>
   <script src="62d61345b4ae5b6afa3da657/js/arbdomainsxy1.ab271b550.js" type="text/javascript"></script>
-  
-  <script>
-    $('form').submit(function () {
-      setTimeout(function () {
-        +$('#search').val();
-      }, 100);
-    });
-  </script>
   <script src="gh/videsigns/webflow-tools_main/webgl-gradient.js"> </script>
-    <!-- Canvas Aimation Js -->
-    <script>
-      // DOM selectors
-      const stars = document.getElementById("stars");
-      const starsCtx = stars.getContext("2d");
-      const slider = document.querySelector(".slider input");
-      const output = document.querySelector("#speed");
-  
-      // global variables
-      let screen,
-        starsElements,
-        starsParams = { speed: 2, number: 300, extinction: 4 };
-  
-      // run stars
-      setupStars();
-      updateStars();
-  
-      // handle slider
-      output.innerHTML = slider.value;
-      slider.oninput = function () {
-        output.innerHTML = this.value;
-        starsParams.speed = this.value;
-      };
-  
-      // update stars on resize to keep them centered
-      window.onresize = function () {
-        setupStars();
-      };
-  
-      // star constructor
-      function Star() {
-        this.x = Math.random() * stars.width;
-        this.y = Math.random() * stars.height;
-        this.z = Math.random() * stars.width;
-  
-        this.move = function () {
-          this.z -= starsParams.speed;
-          if (this.z <= 0) {
-            this.z = stars.width;
-          }
-        };
-  
-        this.show = function () {
-          let x, y, rad, opacity;
-          x = (this.x - screen.c[0]) * (stars.width / this.z);
-          x = x + screen.c[0];
-          y = (this.y - screen.c[1]) * (stars.width / this.z);
-          y = y + screen.c[1];
-          rad = stars.width / this.z;
-          opacity =
-            rad > starsParams.extinction ? 1.5 * (2 - rad / starsParams.extinction) : 1;
-  
-          starsCtx.beginPath();
-          starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
-          starsCtx.arc(x, y, rad, 0, Math.PI * 2);
-          starsCtx.fill();
-        };
-      }
-  
-      // setup <canvas>, create all the starts
-      function setupStars() {
-        screen = {
-          w: window.innerWidth,
-          h: window.innerHeight,
-          c: [window.innerWidth * 0.5, window.innerHeight * 0.5]
-        };
-        window.cancelAnimationFrame(updateStars);
-        stars.width = screen.w;
-        stars.height = screen.h;
-        starsElements = [];
-        for (let i = 0; i < starsParams.number; i++) {
-          starsElements[i] = new Star();
-        }
-      }
-  
-      // redraw the frame
-      function updateStars() {
-        starsCtx.fillStyle = "black";
-        starsCtx.fillRect(0, 0, stars.width, stars.height);
-        starsElements.forEach(function (s) {
-          s.show();
-          s.move();
-        });
-        window.requestAnimationFrame(updateStars);
-      }
-  
-    </script>
+  <script src="js/vanilla-tilt.js"></script>
+  <script src="js/main.js"></script>
+
   
 </body>
 
