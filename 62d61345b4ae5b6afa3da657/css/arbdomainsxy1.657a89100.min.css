@@ -1528,14 +1528,45 @@ textarea.w-select {
   border-radius: 50px;
 }
 .f-n-p-right-s a {
-  text-decoration: none;
-  padding: 10px 30px;
-  background: #0779e4;
-  color: #fff;
-  border-radius: 30px;
-  border: 1px solid #0779e4;
-  transition: .3s;
+	text-decoration: none;
+	padding: 10px 30px;
+	background: #0779e4;
+	color: #fff;
+	border-radius: 30px;
+	border: 1px solid #0779e4;
+	transition: .3s;
+	display: inline-block;
+	margin: 15px 0;
 }
+
+@media all and (max-width:570px) {
+  .home-hero-card {
+    padding: 20px 10px !important;
+  }
+  .from-name-price {
+    margin: 50px 0 30px 0 !important;
+  }
+  
+}
+
+@media all and (max-width:475px) {
+  .f-n-p-left-s {
+    display: grid;
+    grid-template-areas: 'a a b b b b' 'a a c c c c';
+  }
+  .f-n-p-icon {
+    grid-area: a;
+  }
+  .f-n-p-left-s .middle {
+    grid-area: b;
+    margin-bottom: 10px;
+  }
+  .f-n-p-left-s p {
+    grid-area: c;
+  }
+  
+}
+
 .f-n-p-right-s a:hover {
   background: #fff;
   color: #000;
@@ -2616,7 +2647,7 @@ h3 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: hsl(0, 3.7%, 10.6%);
+  background-color: hsla(0, 0%, 100%, 0.04);
 }
 
 .logo-link {
@@ -2892,7 +2923,7 @@ h3 {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 3px;
-  background-image: linear-gradient(121deg, rgba(255, 234, 0, .84), rgb(51, 153, 255) 41%, rgba(55, 0, 255, .64));
+  background-image: linear-gradient(121deg, rgba(255, 234, 0, .84), rgba(198, 41, 255, .77) 41%, rgba(55, 0, 255, .64));
   font-family: 'Quantico', sans-serif !important;
   color: #000;
   font-size: 20px;
@@ -4103,6 +4134,9 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column
   }
+  .footer-brand {
+    padding-top: 20px;
+  }
 
   .navigation-wrapper {
     display: -webkit-box;
@@ -4142,8 +4176,8 @@ h3 {
     position: absolute;
     padding: 12px;
     border-radius: 8px;
-    background-color: #fff;
-    color: #393b6a
+    background-color: #1c1c1c;
+    color: #393b6a;
   }
 
   .navigation-menu.w--open {
@@ -4636,6 +4670,10 @@ h3 {
     width: 100%
   }
 
+  .glass-eff {
+    margin: 0;
+  }
+
   .solution.center.backgroundimg {
     padding-right: 10px;
     padding-left: 10px;
@@ -4753,6 +4791,7 @@ h3 {
     width: 100%
   }
 }
+
 
 #w-node-_01d2fd0e-ea26-0d7b-d57c-b3c34eb1472c-183da65c,
 #w-node-_01d2fd0e-ea26-0d7b-d57c-b3c34eb14738-183da65c,
